@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: black;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    padding: 0 24px;
+}
+
+.header nav {
+    height: 60px;
+    display: flex;
+    color: white;
+    font-size: 0.85rem;
+    align-items: center;
+
+}
+
+.menu {
+    margin: 0 24px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.actions {
+    margin: 0 24px;
+    align-content: center;
+    height: 100%;
+    width:100%;
+    display: inline-block;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+}
