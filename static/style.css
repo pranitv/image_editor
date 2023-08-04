@@ -21,21 +21,54 @@
 }
 
 .menu {
-    margin: 0 24px;
-    display: flex;
+    width: 180px;
     height: 100%;
+    display: flex;
+    justify-content: flex-end;
     align-items: center;
+    margin-left: 50px;
 }
 
 .actions {
     margin: 0 24px;
-    align-content: center;
+    display: flex;
+    align-items: center;
     height: 100%;
     width:100%;
-    display: inline-block;
+    justify-content: flex-end;
+    
 }
 
 nav a{
     color: white;
     text-decoration: none;
+}
+
+.actions a {
+    margin: 0 20px;
+}
+
+.content {
+    display: flex;
+    top: 200px;
+    left: 200px;
+    position: absolute;
+}
+
+.content {
+        text-align:center;
+        padding:3%;
+        border:thin solid black;
+}
+
+input[type="file"]{
+    display: none;
+}
+
+label {
+    cursor: pointer;
+}
+
+#imageName {
+    color: green;
 }
