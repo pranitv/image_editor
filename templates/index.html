@@ -10,29 +10,45 @@
 </head>
 
 <body>
-    <header class="header">
-        <nav>
-            <a class="logo" href="/" title="LoveImg">
-                LOVEIMG
-            </a>
-            <div class="menu">
-                ALL Image Tools
+    <header>
+        <div class="navbar">
+            <div class="nav-logo border">
+                <div class="logo">
+                    LOVEIMG
+                </div>
             </div>
-            <div class="actions">
-                <a href="/login">Login</a>
-                <a href="/register">Sign Up</a>
+            <div class="menu border">
+                All Image Tools
             </div>
-        </nav>
+            <div class="nav-action">
+                <div class="actions border">
+                    <a class="border" href="/login">Login</a>
+                    <a class="border" href="/register">Sign Up</a>
+                </div>
+            </div>
+        </div>
     </header>
-    <div class="content">
-        <label for="inputTag">
-            Select Image <br />
-            <i class="fa fa-2x fa-camera"></i>
-            <input id="inputTag" type="file" />
-            <br />
-            <span id="imageName"></span>
-        </label>
+    
+    <div class="section1">
+        <div class="content">
+            <form action="/edit" method="post">
+                <label for="imageInput">Choose a Image</label>
+                <input type="file" id="imageInput" name="imageInput">
+
+                <label for="dropdown">Choose an operation you want to perform</label>
+                <select id="dropdown" name="dropdown">
+                    <option value="option1">Option1</option>
+                    <option value="option2">Option2</option>
+                    <option value="option3">Option3</option>
+                </select>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
     </div>
+
+
+
 </body>
 
 </html>

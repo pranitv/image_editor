@@ -1,74 +1,103 @@
 * {
     margin: 0;
-    padding: 0;
+    font-family: Arial;
+    border: border-box;
 }
 
-.header {
-    background-color: black;
+.navbar {
     height: 60px;
-    width: 100%;
-    position: fixed;
-    padding: 0 24px;
-}
-
-.header nav {
-    height: 60px;
-    display: flex;
+    background-color: #0F1111;
     color: white;
-    font-size: 0.85rem;
+    display: flex;
     align-items: center;
+}
 
+.nav-logo {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 100px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 100%;
+}
+
+.border {
+    border: 2px solid transparent;
+}
+
+.border:hover {
+    border: 2px solid white;
 }
 
 .menu {
-    width: 180px;
-    height: 100%;
+    width: 200px;
+    height: 50px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    margin-left: 50px;
+    font-size: 1rem;
 }
 
-.actions {
-    margin: 0 24px;
-    display: flex;
-    align-items: center;
-    height: 100%;
-    width:100%;
-    justify-content: flex-end;
-    
-}
-
-nav a{
-    color: white;
+.navbar a{
     text-decoration: none;
+    color: white;
 }
 
-.actions a {
-    margin: 0 20px;
-}
-
-.content {
+.nav-action {
+    height: 50px;
+    width: 1100px;
     display: flex;
-    top: 200px;
-    left: 200px;
-    position: absolute;
+    justify-content: flex-end;
+}
+
+.nav-action .actions {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+}
+
+.section1 {
+    background-image: url("/static/section-main.jpg");
+    height: 1000px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
 }
 
 .content {
-        text-align:center;
-        padding:3%;
-        border:thin solid black;
+    height: 300px;
+    width: 500px;
+    display: block;
+    position: absolute;
+    top: 100px;
 }
 
-input[type="file"]{
-    display: none;
+.form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f4f4f4;
 }
 
 label {
-    cursor: pointer;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 
-#imageName {
-    color: green;
+select, input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
