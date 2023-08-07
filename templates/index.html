@@ -14,6 +14,7 @@
         <div class="navbar">
             <div class="nav-logo border">
                 <div class="logo">
+                    <i class="fa-light fa-heart"></i>
                     LOVEIMG
                 </div>
             </div>
@@ -31,15 +32,16 @@
     
     <div class="section1">
         <div class="content">
-            <form action="/edit" method="post">
+            <form action="/edit" method="post" enctype="multipart/form-data">
                 <label for="imageInput">Choose a Image</label>
                 <input type="file" id="imageInput" name="imageInput">
 
                 <label for="operations">Choose an operation you want to perform</label>
                 <select id="operations" name="operations">
-                    <option value="option1">Option1</option>
-                    <option value="option2">Option2</option>
-                    <option value="option3">Option3</option>
+                    <option value="none" selected="true">-- none --</option>
+                    <option value="resize">resize</option>
+                    <option value="blur">blur</option>
+                    <option value="remove background">remove background</option>
                 </select>
 
                 <button type="submit">Submit</button>
