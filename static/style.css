@@ -101,3 +101,14 @@ select, input[type="submit"] {
     border: 1px solid #ccc;
     border-radius: 4px;
 }
+
+.result {
+    height: 200px;
+    width: 300px;
+    display: block;
+    text-align: center;
+    top: 330px;
+    position: absolute;
+}
+
+

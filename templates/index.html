@@ -29,7 +29,7 @@
             </div>
         </div>
     </header>
-    
+
     <div class="section1">
         <div class="content">
             <form action="/edit" method="post" enctype="multipart/form-data">
@@ -47,10 +47,16 @@
                 <button type="submit">Submit</button>
             </form>
         </div>
+
+
+        {% if processed_filename %}
+        <div class="result">
+            <h2>Processed Image</h2>
+            <p><a href="{{ url_for('download', filename=processed_filename) }}" download>Download Processed Image</a>
+            </p>
+        </div>
+        {% endif %}
     </div>
-
-
-
 </body>
 
 </html>
